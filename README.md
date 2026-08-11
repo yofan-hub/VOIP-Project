@@ -1,5 +1,4 @@
 # VOIP-Project
-# VOIP-Project
 
 Dokumentasi konfigurasi server VoIP Asterisk dengan PJSIP dan simulasi GSM Gateway.
 
@@ -58,3 +57,5 @@ Ekstensi 1000 & 2000: Digunakan untuk pendaftaran client (MicroSIP / Zoiper).
 Ekstensi 800: Fitur Echo Test untuk pengujian latency dan audio stream.
 
 Ekstensi _9X.: Simulasi panggilan keluar (outbound call via GSM Gateway), contoh dial: 908123456789.
+
+## 4. Pengambilan & Analisis Data QoS di Wireshark
