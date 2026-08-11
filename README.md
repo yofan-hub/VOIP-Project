@@ -11,10 +11,13 @@ sudo systemctl status asterisk
 Digunakan untuk edit file konfigurasi PJSIP dan Dialplan:
 
 sudo nano /etc/asterisk/pjsip.conf
+
 sudo nano /etc/asterisk/extensions.conf
-sudo nano /etc/asterisk/voicemai.conf
+
+udo nano /etc/asterisk/voicemai.conf
 
 untuk me restart perubahan di atas
+
 sudo systemctl restart asterisk
 
 instal modul voicemail
