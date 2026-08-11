@@ -1,25 +1,15 @@
 # VOIP-Project
-dokumentasi voip menggunakan GSM
+# VOIP-Project
 
+Dokumentasi konfigurasi server VoIP Asterisk dengan PJSIP dan simulasi GSM Gateway.
 
-## 1. instalisasi server asterisk
-sudo apt install asterisk -y
+## 1. Instalasi Server Asterisk
 
-lakukan apakah asterisk sudah berjalan
-sudo systemctl status asterisk
+Perbarui sistem dan instal paket Asterisk beserta dependensi suara dan modul tambahan:
 
-Digunakan untuk edit file konfigurasi PJSIP dan Dialplan:
-
-sudo nano /etc/asterisk/pjsip.conf
-
-sudo nano /etc/asterisk/extensions.conf
-
-udo nano /etc/asterisk/voicemai.conf
-
-untuk me restart perubahan di atas
-
-sudo systemctl restart asterisk
-
+```bash
+sudo apt update
+sudo apt install asterisk asterisk-core-sounds-en-gsm asterisk-modules -y
 instal modul voicemail
 sudo apt install asterisk-sounds-main asterisk-sounds-core -y
 
