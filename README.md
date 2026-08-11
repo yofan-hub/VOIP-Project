@@ -36,12 +36,25 @@ untuk melakukan GSM diperlukan panggilan dial dengan 908123456789
 
 ## 2. konfigurasi sip
 
+Konfigurasi ekstensi pengguna (endpoint) dan otentikasi pada file PJSIP
+```bash
 sudo nano /etc/asterisk/pjsip.conf
-
+```
+Konfigurasi aturan alur panggilan (dialplan) pada file extensions
+```bash
 sudo nano /etc/asterisk/extensions.conf
-
-restart setelah melakukan tersebut 
-
-sudo asterisk -rx "core reload"
-
+```
+Konfigurasi mailbox untuk pengguna (jika menggunakan fitur voicemail)
+```bash
+sudo nano /etc/asterisk/voicemail.conf
+```
+Setelah mengubah file konfigurasi di atas, muat ulang (reload) Asterisk
+```bash
+sudo asterisk -rx "reload"
+```
 ## 3. konfigurasi client
+Ekstensi 1000 & 2000: Digunakan untuk pendaftaran client (MicroSIP / Zoiper).
+
+Ekstensi 800: Fitur Echo Test untuk pengujian latency dan audio stream.
+
+Ekstensi _9X.: Simulasi panggilan keluar (outbound call via GSM Gateway), contoh dial: 908123456789.
