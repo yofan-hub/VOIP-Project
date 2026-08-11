@@ -13,8 +13,10 @@ sudo apt install asterisk asterisk-core-sounds-en-gsm asterisk-modules -y
 instal modul voicemail
 sudo apt install asterisk-sounds-main asterisk-sounds-core -y
 ```
-restart
-sudo asterisk -rx "reload"
+Cek status service Asterisk untuk memastikan server sudah aktif:
+```bash
+sudo systemctl status asterisk
+```
 
 di dalam modul asterisk ada beberapa modul yang tidak kita pakai contohnya ialah chan_sip
 bila muncul di  -rvvvvvv bisa kita matikan
@@ -25,7 +27,10 @@ sudo nano /etc/asterisk/modules.conf
 tambahkan ini
 noload => chan_sip.so
 ```
-
+lalu lakukan restart
+```bash
+sudo systemctl restart asterisk
+```
 
 untuk melakukan GSM diperlukan panggilan dial dengan 908123456789
 
