@@ -19,11 +19,12 @@ sudo asterisk -rx "reload"
 di dalam modul asterisk ada beberapa modul yang tidak kita pakai contohnya ialah chan_sip
 bila muncul di  -rvvvvvv bisa kita matikan
 
+```
 sudo nano /etc/asterisk/modules.conf
 
 tambahkan ini
 noload => chan_sip.so
-
+```
 
 
 untuk melakukan GSM diperlukan panggilan dial dengan 908123456789
