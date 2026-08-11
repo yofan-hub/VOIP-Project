@@ -12,7 +12,7 @@ sudo apt update
 sudo apt install asterisk asterisk-core-sounds-en-gsm asterisk-modules -y
 instal modul voicemail
 sudo apt install asterisk-sounds-main asterisk-sounds-core -y
-
+```
 restart
 sudo asterisk -rx "reload"
 
