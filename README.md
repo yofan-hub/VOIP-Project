@@ -19,7 +19,7 @@ sudo asterisk -rx "reload"
 di dalam modul asterisk ada beberapa modul yang tidak kita pakai contohnya ialah chan_sip
 bila muncul di  -rvvvvvv bisa kita matikan
 
-```
+```bash
 sudo nano /etc/asterisk/modules.conf
 
 tambahkan ini
