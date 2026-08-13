@@ -182,3 +182,4 @@ paket Application Data otomatis terbongkar menjadi paket SIP.
 Pada paket INVITE, baris Message Header dapat dibaca kembali (From: 1000, To: 2000).
 Terdapat penanda khas pada header berupa parameter transport=tls, membuktikan bahwa paket ini merupakan hasil dekripsi dari tunnel TLS.
 
+## 6. GSM
