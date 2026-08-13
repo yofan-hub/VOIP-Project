@@ -70,6 +70,9 @@ Ekstensi _9X.: Simulasi panggilan keluar (outbound call via GSM Gateway), contoh
 4. Buka Alat Analisis QoS (Jitter, Loss, Delay):Klik menu Telephony di panel atas > arahkan ke RTP > pilih RTP Streams. Akan muncul jendela baru berisi daftar aliran komunikasi. Pilih aliran jaringan yang terdeteksi, lalu klik tombol Analyze (atau Find Reverse untuk melihat komunikasi dua arah). Wireshark akan otomatis menyajikan tabel berisi perhitungan Jitter, Max Delta (latensi/delay tertinggi antar paket), dan persentase Packet Loss.
 
 ## 5. perbedaan UDP dan TLS 
+
+1. UDP
+
 A. Konfigurasi PJSIP (pjsip.conf)
 Di server Asterisk, dipastikan transport UDP diaktifkan pada port 5060:
 ```bash
@@ -98,7 +101,7 @@ Analisis Header: Diklik pada paket REGISTER atau INVITE  perhatikan bagian Sessi
 Header Eksplisit: Parameter From:, To:, User-Agent, dan nomor ekstensi (1000/2000) terbaca jelas dalam bentuk plaintext tanpa membutuhkan kunci keamanan apapun.
 
 
-TLS 
+2. TLS 
 Karena pada Ubuntu versi baru script ast_tls_cert tidak tersedia secara default, sertifikat dibuat manual menggunakan OpenSSL
 
 Buat direktori penyimpanan kunc
