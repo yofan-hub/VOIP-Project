@@ -61,13 +61,14 @@ Ekstensi _9X.: Simulasi panggilan keluar (outbound call via GSM Gateway), contoh
 ## 4. Pengambilan & Analisis Data QoS di Wireshark
 
 1. Mulai Merekam Trafik (Start Capture)
--Buka Wireshark, pilih antarmuka jaringan yang sedang aktif digunakan untuk komunikasi (misalnya koneksi Wi-Fi atau Ethernet). Klik dua kali pada antarmuka tersebut, atau klik tombol ikon Sirip Hiu Biru di pojok kiri atas. Segera lakukan aktivitas jaringan yang ingin diukur (misalnya melakukan panggilan antar ekstensi).
+   Buka Wireshark, pilih antarmuka jaringan yang sedang aktif digunakan untuk komunikasi (misalnya koneksi Wi-Fi atau Ethernet). Klik dua kali pada antarmuka tersebut, atau klik tombol ikon Sirip Hiu Biru di pojok kiri atas. Segera lakukan aktivitas jaringan yang ingin diukur (misalnya melakukan panggilan antar ekstensi).
 
-2. Hentikan Rekaman (Stop Capture):Setelah panggilan atau aktivitas jaringan selesai, kembali ke jendela Wireshark dan klik ikon Kotak Merah di pojok kiri atas untuk menghentikan perekaman trafik.
+3. Hentikan Rekaman (Stop Capture)
+   Setelah panggilan atau aktivitas jaringan selesai, kembali ke jendela Wireshark dan klik ikon Kotak Merah di pojok kiri atas untuk menghentikan perekaman trafik.
 
-3. Filter Paket Spesifik:Di kotak teks berlabel Apply a display filter... di bagian atas, ketik protokol yang ingin dianalisis. Jika ingin menganalisis kualitas media/suara, ketik rtp. Jika ingin melihat proses inisiasinya, ketik sip. Tekan Enter.
+4. Filter Paket Spesifik:Di kotak teks berlabel Apply a display filter... di bagian atas, ketik protokol yang ingin dianalisis. Jika ingin menganalisis kualitas media/suara, ketik rtp. Jika ingin melihat proses inisiasinya, ketik sip. Tekan Enter.
 
-4. Buka Alat Analisis QoS (Jitter, Loss, Delay):Klik menu Telephony di panel atas > arahkan ke RTP > pilih RTP Streams. Akan muncul jendela baru berisi daftar aliran komunikasi. Pilih aliran jaringan yang terdeteksi, lalu klik tombol Analyze (atau Find Reverse untuk melihat komunikasi dua arah). Wireshark akan otomatis menyajikan tabel berisi perhitungan Jitter, Max Delta (latensi/delay tertinggi antar paket), dan persentase Packet Loss.
+5. Buka Alat Analisis QoS (Jitter, Loss, Delay):Klik menu Telephony di panel atas > arahkan ke RTP > pilih RTP Streams. Akan muncul jendela baru berisi daftar aliran komunikasi. Pilih aliran jaringan yang terdeteksi, lalu klik tombol Analyze (atau Find Reverse untuk melihat komunikasi dua arah). Wireshark akan otomatis menyajikan tabel berisi perhitungan Jitter, Max Delta (latensi/delay tertinggi antar paket), dan persentase Packet Loss.
 
 ## 5. perbedaan UDP dan TLS 
 
