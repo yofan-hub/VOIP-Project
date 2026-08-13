@@ -91,7 +91,9 @@ Gunakan filter: sip
 
 Lakukan registrasi akun atau panggil nomor 800 (Echo Test).
 
-Hasil Analisis Kerentanan (UDP):Protokol: Paket langsung terdeteksi sebagai SIP.Analisis Header: Diklik pada paket REGISTER atau INVITE $\rightarrow$ perhatikan bagian Session Initiation Protocol.
+Hasil Analisis Kerentanan (UDP):Protokol: Paket langsung terdeteksi sebagai SIP.
+
+Analisis Header: Diklik pada paket REGISTER atau INVITE  perhatikan bagian Session Initiation Protocol.
 
 Header Eksplisit: Parameter From:, To:, User-Agent, dan nomor ekstensi (1000/2000) terbaca jelas dalam bentuk plaintext tanpa membutuhkan kunci keamanan apapun.
 
