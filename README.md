@@ -154,13 +154,24 @@ Agar pihak penyadap/admin dapat melakukan dekripsi di Wireshark:
 3. Simpan di komputer client/Windows dengan nama file asterisk.key (pastikan ekstensi murni .key, bukan .key.txt)
 
 Kondisi Didekripsi (Menggunakan Private Key / Simulasi Kebocoran Kunci)
-Buka Wireshark: Edit, Preferences, Protocols, TLS.
+
+Buka Wireshark: Edit, Preferences, Protocols, TLS
+
 Di bagian RSA keys list, klik Edit... + (Tambah)
+
 IP Address: 192.168.1.10
-Port: 5061Protocol: sipKey File: Pilih file asterisk.key yang telah disimpan.
+
+Port: 5061
+
+Protocol: sipKey File: Pilih file asterisk.key yang telah disimpan.
+
 Klik OK
-Hasilp
-aket Application Data otomatis terbongkar menjadi paket SIP.
+
+Hasil
+
+paket Application Data otomatis terbongkar menjadi paket SIP.
+
+di tls invitee ataupun protokol akann terkunci dn tidak muncul seperti udp dan di tls akan Terbaca sebagai TLSv1.2 Application Data akan muncul bila membuka dengan kuncinya
 Pada paket INVITE, baris Message Header dapat dibaca kembali (From: 1000, To: 2000).
 Terdapat penanda khas pada header berupa parameter transport=tls, membuktikan bahwa paket ini merupakan hasil dekripsi dari tunnel TLS.
 
