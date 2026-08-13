@@ -61,7 +61,7 @@ Ekstensi _9X.: Simulasi panggilan keluar (outbound call via GSM Gateway), contoh
 ## 4. Pengambilan & Analisis Data QoS di Wireshark
 
 1. Mulai Merekam Trafik (Start Capture)
-   Buka Wireshark, pilih antarmuka jaringan yang sedang aktif digunakan untuk komunikasi (misalnya koneksi Wi-Fi atau Ethernet). Klik dua kali pada antarmuka tersebut, atau klik tombol ikon Sirip Hiu Biru di pojok kiri atas. Segera lakukan aktivitas jaringan yang ingin diukur (misalnya melakukan panggilan antar ekstensi).
+- Buka Wireshark, pilih antarmuka jaringan yang sedang aktif digunakan untuk komunikasi (misalnya koneksi Wi-Fi atau Ethernet). Klik dua kali pada antarmuka tersebut, atau klik tombol ikon Sirip Hiu Biru di pojok kiri atas. Segera lakukan aktivitas jaringan yang ingin diukur (misalnya melakukan panggilan antar ekstensi).
 
 3. Hentikan Rekaman (Stop Capture)
    Setelah panggilan atau aktivitas jaringan selesai, kembali ke jendela Wireshark dan klik ikon Kotak Merah di pojok kiri atas untuk menghentikan perekaman trafik.
