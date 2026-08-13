@@ -66,13 +66,13 @@ Ekstensi _9X.: Simulasi panggilan keluar (outbound call via GSM Gateway), contoh
 
 2. Hentikan Rekaman (Stop Capture)
   
--Setelah panggilan atau aktivitas jaringan selesai, kembali ke jendela Wireshark dan klik ikon Kotak Merah di pojok kiri atas untuk menghentikan perekaman trafik.
+- Setelah panggilan atau aktivitas jaringan selesai, kembali ke jendela Wireshark dan klik ikon Kotak Merah di pojok kiri atas untuk menghentikan perekaman trafik.
 
 3. Filter Paket Spesifik
 
 - Di kotak teks berlabel Apply a display filter... di bagian atas, ketik protokol yang ingin dianalisis. Jika ingin menganalisis kualitas media/suara, ketik rtp. Jika ingin melihat proses inisiasinya, ketik sip. Tekan Enter.
 
-8. Buka Alat Analisis QoS (Jitter, Loss, Delay
+4. Buka Alat Analisis QoS (Jitter, Loss, Delay
 
 - Klik menu Telephony di panel atas > arahkan ke RTP > pilih RTP Streams. Akan muncul jendela baru berisi daftar aliran komunikasi. Pilih aliran jaringan yang terdeteksi, lalu klik tombol Analyze (atau Find Reverse untuk melihat komunikasi dua arah). Wireshark akan otomatis menyajikan tabel berisi perhitungan Jitter, Max Delta (latensi/delay tertinggi antar paket), dan persentase Packet Loss.
 
